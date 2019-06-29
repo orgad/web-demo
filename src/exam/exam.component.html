@@ -1,0 +1,31 @@
+<div>
+    <button nz-button nzType="primary">保存</button>
+</div>
+<br/>
+
+<div>
+   <nz-select style="width: 120px;" [(ngModel)]="selectedValue" nzAllowClear nzPlaceHolder="分类">
+    <nz-option nzValue="01" nzLabel="01生活"></nz-option>
+    <nz-option nzValue="02" nzLabel="02娱乐"></nz-option>
+  </nz-select>
+  <div>
+    <nz-input-group nzAddOnBefore="标题">
+       <input type="text" style="width: 240px;" nz-input [(ngModel)]="inputValue" />
+    </nz-input-group>
+    条目一:<input nz-input  style="width: 240px;" placeholder="Basic usage" [(ngModel)]="value"  />
+    <br/>
+    条目二:<input nz-input  style="width: 240px;" placeholder="Basic usage" [(ngModel)]="value"  />
+    <br/>
+    条目三:<input nz-input  style="width: 240px;" placeholder="Basic usage" [(ngModel)]="value"  />
+    <br/>
+    条目四:<input nz-input  style="width: 240px;" placeholder="Basic usage" [(ngModel)]="value"  />
+  </div>
+  <div>
+        <nz-select style="width: 120px;" [(ngModel)]="selectedValue" nzAllowClear nzPlaceHolder="答案">
+                <nz-option nzValue="A" nzLabel="A"></nz-option>
+                <nz-option nzValue="B" nzLabel="B"></nz-option>
+                <nz-option nzValue="C" nzLabel="C"></nz-option>
+                <nz-option nzValue="D" nzLabel="D"></nz-option>
+              </nz-select>
+  </div>
+</div>  
